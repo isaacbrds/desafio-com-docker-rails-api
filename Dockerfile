@@ -23,9 +23,8 @@ WORKDIR $INSTALL_PATH
 
 # Copia o nosso Gemfile para dentro do container
 COPY Gemfile ./
-
-# Seta o path para as Gems
-ENV BUNDLE_PATH /gems
+COPY Gemfile.lock ./
+RUN bundle install
 
 # Copia nosso código para dentro do container
 COPY . .
