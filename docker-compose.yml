@@ -16,10 +16,8 @@ services:
       - DB_PASSWORD=postgres
     volumes:
       - .:/desafio-stant-api
-      - gems:/gems
     depends_on:
       - db
 
 volumes:
   postgres:
-  gems:
