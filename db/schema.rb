@@ -25,7 +25,6 @@ ActiveRecord::Schema.define(version: 2022_09_11_205801) do
     t.string "title"
     t.string "attendee"
     t.datetime "start_time"
-    t.datetime "end_time"
     t.bigint "session_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

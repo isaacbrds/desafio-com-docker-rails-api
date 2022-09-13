@@ -6,5 +6,4 @@ RSpec.describe Session, type: :model do
   describe 'relations' do
     it {is_expected.to belong_to(:track)}
   end
-
 end
